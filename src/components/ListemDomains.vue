@@ -36,6 +36,12 @@ export default {
 		return {
 			item: ""
 		};
+	},
+	methods: {
+		addItems(item){
+			this.$emit("addItem", item);
+			this.item = "";
+		}
 	}
 
 };
@@ -45,3 +51,4 @@ export default {
 <style scoped>
 
 </style>
+ 
